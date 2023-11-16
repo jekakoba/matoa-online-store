@@ -9,6 +9,7 @@ ___
 + ***Photo gallery: The main page contains a block with convenient photo previews. When you click on any of the previews, an expanded version of the image opens, allowing you to see the photo in full size.***
 + ***Animation of adding an item to the cart***.
 + ***Parallax effect of the image in the main slider.***
++ ***Loading data using ajax technology in one of the blocks on the main page.***
 
 ![matoa online store](https://www.jekakoba.com/img/portfolio/preview/matoa.png)
 
