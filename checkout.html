@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Checkout</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231116211744">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="MATOA Way Kambas - This wood is chosen to represent the Sumatran Rhino's skin, designed with an overlapping effect on its strap to mimic the Rhino's skin. Learn more about this unique watch and its appreciation for nature." />
+</head>
+
+
+<body>
+	<div class="loader-wrap">
+		<div id="loader"></div>
+	</div>
+	<div class="wrapper">
+		<header class="header" data-lp data-scroll-show="200">
+			<div class="header__container">
+				<a href="../home.html" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="../product.html" class="menu__link">Product</a></li>
+							<li class="menu__item"><a href="../checkout.html" class="menu__link">Checkout</a></li>
+							<li class="menu__item"><a href="../payment.html" class="menu__link">Payment</a></li>
+							<li class="menu__item"><a href="../confirmation.html" class="menu__link">Confirmation</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions actions-header">
+					<button class="actions-header__search _icon-search" type="button" data-popup="#search" aria-label="open the search field"></button>
+					<button class="actions-header__login _icon-user" type="button" data-popup="#sign-up" data-da=".menu__body, 400">Sign up</button>
+					<button class="actions-header__cart _icon-cart" type="button" aria-label="open a pop-up with products" data-popup="#cart"><span>0</span></button>
+					<button class="icon-menu" aria-label="open menu" type="button"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="checkout">
+			<div class="checkout__container">
+				<div class="checkout__pay-steps pay-steps">
+					<div class="pay-steps__items">
+						<div class="pay-steps__item item-pay-steps">
+
+							<div class="item-pay-steps__wrapper">
+								<div class="item-pay-steps__icon">
+									<div class="item-pay-steps__icon-photo  item-pay-steps__icon-photo_checkout item-pay-steps__icon-photo_active-step-icon"></div>
+								</div>
+								<div class="item-pay-steps__body item-pay-steps__body_active-step">
+									<div class="item-pay-steps__step">1.</div>
+									<div class="item-pay-steps__name-step">Checkout</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="pay-steps__item item-pay-steps">
+							<div class="item-pay-steps__wrapper">
+								<div class="item-pay-steps__icon">
+									<div class="item-pay-steps__icon-photo  item-pay-steps__icon-photo_payment"></div>
+								</div>
+								<div class="item-pay-steps__body  _active-step">
+									<div class="item-pay-steps__step">2.</div>
+									<div class="item-pay-steps__name-step">Payment</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="pay-steps__item item-pay-steps">
+							<div class="item-pay-steps__wrapper">
+								<div class="item-pay-steps__icon">
+									<div class="item-pay-steps__icon-photo  item-pay-steps__icon-photo_confirmation"></div>
+								</div>
+								<div class="item-pay-steps__body  _active-step">
+									<div class="item-pay-steps__step">3.</div>
+									<div class="item-pay-steps__name-step">Confirmation</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="checkout__body">
+					<div class="checkout__column">
+						<div class="checkout__order order">
+							<h2 class="order__title title-order">Detail Order</h2>
+							<div class="order__info info-order">
+								<div class="info-order__body">
+									<div class="info-order__column">
+										<p class="info-order__lable">Subtotal</p>
+										<p class="info-order__subtotal">Rp 2.152.000</p>
+
+
+									</div>
+									<div class="info-order__column">
+										<p class="info-order__lable">Shipping Cost</p>
+										<p class="info-order__subtotal">Rp 500.000</p>
+
+									</div>
+
+									<div class="info-order__column">
+										<p class="info-order__lable">Promo Code</p>
+										<p class="info-order__subtotal">INDONESIA</p>
+
+									</div>
+									<div class="info-order__column">
+										<p class="info-order__lable">Packaging</p>
+										<p class="info-order__subtotal">Rp 50.000</p>
+									</div>
+								</div>
+								<div class="order__footer footer-order">
+									<div class="footer-order__column">
+										<p class="footer-order__total">Grand Total</p>
+										<p class="footer-order__price">Rp 2.702.000</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="checkout__column">
+						<div class="checkout__address address-checkout">
+
+							<form data-one-select data-dev class="address-checkout__form form" method="post" action="#">
+								<div class="form__wrapper">
+									<h2 class="form__title title-order">Billing Address</h2>
+									<div class="form__line">
+										<label class="form__lable" for="fullname">Fullname</label>
+										<input autocomplete="off" id="fullname" type="text" name="form[fullname]" placeholder="Ex: Rasyidin Arsyad Nasution" class="input">
+									</div>
+									<div class="form__line">
+										<label class="form__lable" for="email">Email Address</label>
+										<input autocomplete="off" id="email" type="email" name="form[email]" placeholder="Ex: rasyid.arsyad@gmail.com" class="input">
+									</div>
+									<div class="form__line">
+										<label class="form__lable" for="phone">Phone Number</label>
+										<input autocomplete="off" id="phone" type="number" name="form[number]" placeholder="Ex: 089111888999" class="input">
+									</div>
+									<div class="form__line">
+										<label class="form__lable" for="address">Shipping Address</label>
+										<input autocomplete="off" id="address" type="text" name="form[shipingAddress]" placeholder="Ex: Patriot Street Number 666, Ngaklik, Sleman" class="input">
+									</div>
+									<div class="form__line">
+										<label class="form__lable" for="country">Country</label>
+										<select name="form[country]" data-class-modif="checkout-select" data-scroll id="country" class="form__select">
+											<option value="USA" selected>United State of America (USA)</option>
+											<option value="China">China</option>
+											<option value="Ukraine">Ukraine</option>
+											<option value="Poland">Poland</option>
+										</select>
+									</div>
+									<div class="form__line">
+										<label class="form__lable" for="state/province">State/Province</label>
+										<select data-scroll name="form[state/province]" data-class-modif="checkout-select" id="state/province" class="form__select">
+											<option value="California" selected>California</option>
+											<option value="Texas">Texas</option>
+											<option value="Arizona">Arizona</option>
+											<option value="Florida">Florida</option>
+											<option value="Arkansas">Arkansas</option>
+											<option value="Montana">Montana</option>
+										</select>
+									</div>
+									<div class="form__row">
+										<div class="form__column">
+											<div class="form__line">
+												<label class="form__lable" for="city">City</label>
+												<select data-scroll name="form[city]" data-class-modif="checkout-select" id="city" class="form__select">
+													<option value="California" selected>San Francisco</option>
+													<option value="Texas">Chicago</option>
+													<option value="Arizona">Houston</option>
+													<option value="Florida">Phoenix</option>
+													<option value="Arkansas">Miami</option>
+												</select>
+											</div>
+										</div>
+										<div class="form__column form__column_zip-code">
+											<div class="form__line">
+												<label class="form__lable" for="zip-code">Zip Code</label>
+												<input autocomplete="off" id="zip-code" type="text" name="form[zipCode]" placeholder="Ex: 94024" class="input">
+											</div>
+										</div>
+									</div>
+									<div class="form__line">
+										<label class="form__lable" for="logistics">Choose Courier</label>
+										<select data-scroll name="form[logistics]" data-class-modif="checkout-select" id="logistics" class="form__select">
+											<option value="DHL" selected>DHL</option>
+											<option value="FedEx">FedEx</option>
+											<option value="SNCF">SNCF</option>
+											<option value="UPS">UPS </option>
+										</select>
+									</div>
+
+								</div>
+								<div class="form__buttons">
+									<a href="#" class="form__button button-transparent button-transparent_big">Continue Shopping</a>
+									<button type="submit" class="form__button button button_big">Place My Order</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer data-spollers="991.98,max" class="footer">
+			<div class="footer__partners partners">
+				<div class="partners__container">
+					<div class="partners__items">
+						<div class="partners__item">
+							<img src="img/partners/bni46.svg" width="100" height="100" alt="bni46">
+						</div>
+						<div class="partners__item">
+							<img src="img/partners/permata-bank.svg" width="100" height="100" alt="permata-bank">
+						</div>
+						<div class="partners__item">
+							<img src="img/partners/master-card.svg" width="100" height="100" alt="master-card">
+						</div>
+						<div class="partners__item">
+							<img src="img/partners/danamon.svg" width="100" height="100" alt="danamon">
+						</div>
+						<div class="partners__item">
+							<img src="img/partners/visa.svg" width="100" height="100" alt="visa">
+						</div>
+						<div class="partners__item">
+							<img src="img/partners/mandiri.svg" width="100" height="100" alt="visa">
+						</div>
+						<div class="partners__item">
+							<img src="img/partners/kredivo.svg" width="100" height="100" alt="visa">
+						</div>
+						<div class="partners__item">
+							<img src="img/partners/uob.svg" width="100" height="100" alt="visa">
+						</div>
+						<div class="partners__item">
+							<img src="img/partners/go-pay.svg" width="100" height="100" alt="go-pay">
+						</div>
+						<div class="partners__item">
+							<img src="img/partners/standarts-chartered.svg" width="100" height="100" alt="standarts-chartered">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__container">
+				<div class="footer__column">
+					<a href="../home.html" class="footer__logo">
+						<picture><source srcset="img/logo-footer.webp" type="image/webp"><img src="img/logo-footer.png" alt="logo"></picture>
+					</a>
+					<div class="footer__blocks">
+						<div class="footer__block">
+							<h3 class="footer__label label-footer">Address</h3>
+							<div class="footer__text">
+								<p>Store & Office</p>
+								<p>Jl. Setrasari Kulon III, No. 10-12,</p>
+								<p>Sukarasa, Sukasari, Bandung,</p>
+								<p>Jawa Barat, Indonesia 40152</p>
+							</div>
+						</div>
+						<div class="footer__block">
+							<h3 class="footer__label label-footer">Office Hour</h3>
+							<div class="footer__text">
+								<p>Monday - Sunday</p>
+								<p>10.00 - 18.00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<details class="footer__column">
+					<summary class="footer__title _icon-arrow-select">Get in touch</summary>
+					<div class="footer__contacts contacts-footer">
+						<div class="contacts-footer__body">
+							<div class="contacts-footer__label label-footer">Phone</div>
+							<a href="tel:02220277564" class="contacts-footer__value">022-20277564</a>
+							<div class="contacts-footer__label label-footer">Service Center</div>
+							<a href="tel:02220277564" class="contacts-footer__value">0811-233-8899</a>
+							<div class="contacts-footer__label label-footer">Customer Service</div>
+							<a href="tel:02220277564" class="contacts-footer__value">0811-233-8899</a>
+							<div class="footer__social social">
+								<a href="#" class="social__item _icon-s-facebook"></a>
+								<a href="#" class="social__item social__item_inst _icon-instagram"></a>
+								<a href="#" class="social__item _icon-s-twitter"></a>
+								<a href="#" class="social__item _icon-s-youtube"></a>
+							</div>
+						</div>
+					</div>
+				</details>
+				<details class="footer__column">
+					<summary class="footer__title _icon-arrow-select">Useful Link</summary>
+					<nav class="footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item"><a href="../home.html" class="menu-footer__link">Warranty & Complaints</a></li>
+							<li class="menu-footer__item"><a href="../home.html" class="menu-footer__link">Order & Shipping</a></li>
+							<li class="menu-footer__item"><a href="../home.html" class="menu-footer__link">Tracking Order</a></li>
+							<li class="menu-footer__item"><a href="../home.html" class="menu-footer__link">About Us</a></li>
+							<li class="menu-footer__item"><a href="../home.html" class="menu-footer__link">Repair</a></li>
+							<li class="menu-footer__item"><a href="../home.html" class="menu-footer__link">Terms</a></li>
+							<li class="menu-footer__item"><a href="../home.html" class="menu-footer__link">FAQ</a></li>
+						</ul>
+					</nav>
+				</details>
+				<details class="footer__column">
+					<summary class="footer__title _icon-arrow-select">Campaign</summary>
+					<nav class="footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item"><a href="../home.html" class="menu-footer__link">Mengenal Arti Cukup</a></li>
+							<li class="menu-footer__item"><a href="../home.html" class="menu-footer__link">Tell Your Difference</a></li>
+							<li class="menu-footer__item"><a href="../home.html" class="menu-footer__link">Waykambas</a></li>
+							<li class="menu-footer__item"><a href="../home.html" class="menu-footer__link">Rebrand</a></li>
+							<li class="menu-footer__item"><a href="../home.html" class="menu-footer__link">Gallery</a></li>
+							<li class="menu-footer__item"><a href="../home.html" class="menu-footer__link">Singo</a></li>
+							<li class="menu-footer__item"><a href="../home.html" class="menu-footer__link">Rakai</a></li>
+						</ul>
+					</nav>
+				</details>
+			</div>
+		</footer>
+	</div>
+	<div id="search" aria-hidden="true" class="popup popup_search">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					<form data-dev action="#" method="get" class="seach-form">
+						<div class="seach-form__title">Search</div>
+						<div class="seach-form__body">
+							<div class="seach-form__line">
+								<input data-required autocomplete="off" type="text" name="searching" class="seach-form__input input">
+							</div>
+							<button type="submit" class="seach-form__button button _icon-search"></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="cart" aria-hidden="true" class="popup popup_cart">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					<form data-one-select action="#" class="cart">
+						<div class="cart__items">
+							<div class="cart__item item-cart">
+								<a href="#" class="item-cart__image">
+									<picture><source srcset="img/product/images/preview/01.webp" type="image/webp"><img src="img/product/images/preview/01.png" alt="Image"></picture>
+								</a>
+								<div class="item-cart__body">
+									<a href="#" class="item-cart__title">Way Kambas Mini Ebony</a>
+									<div class="item-cart__old-price old-price">Rp 1.280.000</div>
+									<div class="item-cart__price">Rp 1.024.000</div>
+									<div class="item-cart__options options-item-cart">
+										<div class="options-item-cart__label">Custom Engrave</div>
+										<div class="options-item-cart__value">“Happy | Birthday | from”</div>
+									</div>
+								</div>
+								<div class="item-cart__info">
+									<div class="item-cart__packaging">
+										<div class="item-cart__label">Select Packaging</div>
+										<select name="form[select-packaging-1]" data-scroll data-class-modif="cart">
+											<option value="1" selected>Wooden Packaging (Rp 50.000)</option>
+											<option value="2">Wooden Packaging (Rp 40.000)</option>
+											<option value="3">Wooden Packaging (Rp 30.000)</option>
+											<option value="4">Wooden Packaging (Rp 20.000)</option>
+											<option value="5">Wooden Packaging (Rp 20.000)</option>
+											<option value="6">Wooden Packaging (Rp 20.000)</option>
+											<option value="7">Wooden Packaging (Rp 20.000)</option>
+											<option value="8">Wooden Packaging (Rp 20.000)</option>
+											<option value="9">Wooden Packaging (Rp 20.000)</option>
+											<option value="10">Wooden Packaging (Rp 20.000)</option>
+											<option value="11">Wooden Packaging (Rp 20.000)</option>
+											<option value="12">Wooden Packaging (Rp 20.000)</option>
+											<option value="13">Wooden Packaging (Rp 20.000)</option>
+										</select>
+									</div>
+									<div class="item-cart__actions">
+										<div data-quantity class="item-cart__quantity quantity">
+											<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+											<div class="quantity__input">
+												<input readonly data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+											</div>
+											<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+										</div>
+										<div class="item-cart__total">Rp 2.048.000</div>
+										<button class="item-cart__delete _icon-delete"></button>
+									</div>
+								</div>
+							</div>
+							<div class="cart__item item-cart">
+								<a href="#" class="item-cart__image">
+									<picture><source srcset="img/product/images/preview/02.webp" type="image/webp"><img src="img/product/images/preview/02.png" alt="Image"></picture>
+								</a>
+								<div class="item-cart__body">
+									<a href="" class="item-cart__title">Way Kambas Mini Ebony</a>
+									<div class="item-cart__price">Rp 1.024.000</div>
+									<div class="item-cart__options options-item-cart">
+										<div class="options-item-cart__label">Custom Engrave</div>
+										<div class="options-item-cart__value">“Happy | Birthday | from”</div>
+									</div>
+								</div>
+								<div class="item-cart__info">
+									<div class="item-cart__packaging">
+										<div class="item-cart__label">Select Packaging</div>
+										<select data-scroll name="form[select-packaging-2]" data-class-modif="cart">
+											<option value="1" selected>Wooden Packaging (Rp 50.000)</option>
+											<option value="2">Wooden Packaging (Rp 40.000)</option>
+											<option value="3">Wooden Packaging (Rp 30.000)</option>
+											<option value="5">Wooden Packaging (Rp 20.000)</option>
+											<option value="6">Wooden Packaging (Rp 20.000)</option>
+											<option value="7">Wooden Packaging (Rp 20.000)</option>
+											<option value="8">Wooden Packaging (Rp 20.000)</option>
+										</select>
+									</div>
+									<div class="item-cart__actions">
+										<div data-quantity class="item-cart__quantity quantity">
+											<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+											<div class="quantity__input">
+												<input readonly data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+											</div>
+											<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+										</div>
+										<div class="item-cart__total">Rp 2.048.000</div>
+										<button class="item-cart__delete _icon-delete"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cart__footer">
+							<div class="cart__promo promo-cart">
+								<label for="p-1" class="promo-cart__label">Kode Promo</label>
+								<div class="promo-cart__line">
+									<input id="p-1" autocomplete="off" type="text" name="promo" class="promo-cart__input">
+								</div>
+								<div class="promo-cart__info">35% OFF</div>
+							</div>
+							<div class="cart__total total-cart">
+								<div class="total-cart__label">Total</div>
+								<div class="total-cart__value">
+									<div class="total-cart__old-price old-price">Rp 3.312.000</div>
+									<div class="total-cart__price">Rp 2.152.000</div>
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="cart__button button">Checkout</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="sign-up" aria-hidden="true" class="popup popup_sign-up">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__sign-up sign-up">
+					<h2 class="sign-up__title">Create An Account</h2>
+					<div class="sign-up__description">
+						<p>Create an account to enjoy all the services without any ads for free!</p>
+					</div>
+					<div class="sign-up__links links-services">
+						<a href="#" class="links-services__item">
+							<div class="links-services__icon">
+								<img src="img/icons/google.svg" alt="google">
+							</div>
+							<div class="links-services__text">Sign up with Google </div>
+						</a>
+						<a href="#" class="links-services__item">
+							<div class="links-services__icon">
+								<img src="img/icons/facebook.svg" alt="facebook">
+							</div>
+							<div class="links-services__text">Sign up with Facebook</div>
+						</a>
+					</div>
+					<div class="sign-up__or">- OR -</div>
+
+					<form action="#" method="post" class="sign-up-form">
+						<div class="sign-up-form__wrapper">
+							<label class="sign-up-form__label" for="userName">
+								<input autocomplete="off" type="text" id="userName" name="form[userNmae]" placeholder="" class="sign-up-form__input">
+								<span class="sign-up-form__placeholder">Full Name</span>
+							</label>
+							<label class="sign-up-form__label" for="email-sign-up">
+								<input autocomplete="off" type="email" required id="email-sign-up" name="form[email-sign-up]" placeholder="" class="sign-up-form__input">
+								<span class="sign-up-form__placeholder">Email</span>
+							</label>
+							<label class="sign-up-form__label" for="password-sign-up">
+								<input autocomplete="off" type="password" id="password-sign-up" name="form[password]" placeholder="" class="sign-up-form__input sign-up-form__input_pass">
+								<span class="sign-up-form__placeholder">Password</span>
+								<button class="sign-up-form__viewpass" type="button">
+								</button>
+							</label>
+						</div>
+						<button class="sign-up-form__button" type="submit">Create Account</button>
+					</form>
+					<div class="sign-up__text">Already have an account? <a href="#">Log in</a> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20231116211744"></script>
+</body>
+
+</html>

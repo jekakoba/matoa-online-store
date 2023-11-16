@@ -1,0 +1,95 @@
+{
+	"collections": [
+		{
+			"id": 1,
+			"title": "Way Kambas Maple",
+			"image": "img/collections/maple/01.png",
+			"price": {
+				"value": "1.280.000"
+			},
+			"category": 1,
+			"url": "https://google.com"
+		},
+		{
+			"id": 2,
+			"title": "Kaili",
+			"image": "img/collections/maple/02.png",
+			"price": {
+				"value": "1.200.000"
+			},
+			"category": 1,
+			"url": "https://google.com"
+		},
+		{
+			"id": 3,
+			"title": "Sunda",
+			"image": "img/collections/maple/03.png",
+			"price": {
+				"value": "1.180.000"
+			},
+			"category": 1,
+			"url": "https://google.com"
+		},
+		{
+			"id": 4,
+			"title": "Tomia Ebony",
+			"image": "img/collections/ebony/01.png",
+			"price": {
+				"value": "150.000",
+				"oldvalue": "1.150.000"
+			},
+			"category": 2,
+			"url": "https://google.com"
+		},
+		{
+			"id": 5,
+			"title": "Mori",
+			"image": "img/collections/ebony/02.png",
+			"price": {
+				"value": "1.150.000"
+			},
+			"category": 2,
+			"url": "https://google.com"
+		},
+		{
+			"id": 6,
+			"title": "Alor",
+			"image": "img/collections/ebony/03.png",
+			"price": {
+				"value": "1.100.000"
+			},
+			"category": 2,
+			"url": "https://google.com"
+		},
+		{
+			"id": 7,
+			"title": "Sikka (Ebony & Maple)",
+			"image": "img/collections/featured/01.png",
+			"price": {
+				"value": "1.050.000"
+			},
+			"category": 3,
+			"url": "https://google.com"
+		},
+		{
+			"id": 8,
+			"title": "Lore Walnut",
+			"image": "img/collections/featured/02.png",
+			"price": {
+				"value": "1.050.000"
+			},
+			"category": 3,
+			"url": "https://google.com"
+		},
+		{
+			"id": 9,
+			"title": "Way Kambas Limited Edition",
+			"image": "img/collections/featured/03.png",
+			"price": {
+				"value": "1.050.000"
+			},
+			"category": 3,
+			"url": "https://google.com"
+		}
+	]
+}
